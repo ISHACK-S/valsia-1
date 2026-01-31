@@ -68,6 +68,93 @@ Skill Gap Analysis
         ↓
 30-Day Execution Roadmap
 
+
+
+## ⚙️ How to Run the Project Locally
+
+This project is designed to run completely on **localhost** using **Docker** and a **local LLaMA-based LLM**.
+
+---
+
+### 🔧 Prerequisites
+
+Ensure the following are installed on your system:
+
+- Git
+- Docker (v20+)
+- Docker Compose
+- Minimum 8 GB RAM (recommended for local LLM inference)
+
+---
+
+### 📥 Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/valsia-skill-mentor-mvp.git
+cd valsia-skill-mentor-mvp
+
+🧠 Step 2: Download a Local LLaMA Model
+Download any GGUF-compatible LLaMA / Mistral model
+(7B models are recommended for local execution).
+
+Example sources:
+
+Hugging Face (GGUF format)
+
+TheBloke repositories
+
+After downloading, place the model file inside the following directory:
+
+/models
+Example:
+
+/models/llama-2-7b.gguf
+⚠️ LLM model files are not included in this repository due to size and licensing constraints.
+
+🔐 Step 3: Environment Configuration
+Create an environment file:
+
+cp .env.example .env
+Update the .env file with the following values:
+
+LLM_PROVIDER=local
+LLM_MODEL_PATH=/models/llama-2-7b.gguf
+BACKEND_PORT=5000
+FRONTEND_PORT=3000
+No external API keys are required to run the project locally.
+
+🐳 Step 4: Run the Project Using Docker
+Start all services using Docker Compose:
+
+docker compose up --build
+This command will start:
+
+Frontend application
+
+Backend API server
+
+Local LLM inference service
+
+🌐 Step 5: Access the Application
+Once the containers are running, open your browser:
+
+Frontend: http://localhost:3000
+Backend API: http://localhost:5000
+🧪 How to Test the Application
+Open the frontend URL in your browser
+
+Enter sample skills (e.g., Python, SQL, React)
+
+Submit the form
+
+Review the generated:
+
+Job role suggestions
+
+Readiness score
+
+Skill gap analysis
+
 ## 🔐 Deployment Note
 
 This Phase-1 MVP currently runs in a secure local environment using containerized services and local LLM inference.  
@@ -131,9 +218,10 @@ ISHACK S
 TAARUNYA GIRIRAJ
 PRANDYA SUNDAR
 
-
 ---
 
 ## 📄 License
 
 Shared strictly for demonstration and evaluation purposes.
+
+
