@@ -67,3 +67,73 @@ Job Role Mapping + Readiness Score
 Skill Gap Analysis
         ↓
 30-Day Execution Roadmap
+
+## 🔐 Deployment Note
+
+This Phase-1 MVP currently runs in a secure local environment using containerized services and local LLM inference.  
+For security and intellectual property reasons, a public deployment is not exposed at this stage.  
+
+This repository focuses on demonstrating product flow, architecture, and core logic.
+
+---
+
+## 📂 Repository Scope
+
+### Included
+- Frontend UI prototype
+- Abstracted backend logic
+- Mock / sample AI responses
+- Screenshots of the working system
+- Documentation and flow explanation
+
+### Excluded
+- Production AI prompts
+- Docker images and LLM models
+- Internal Dify workflows
+- Supabase secrets or API keys
+- Full production infrastructure
+
+---
+
+## 🧪 Demo Flow
+
+1. User enters existing skills  
+2. System evaluates market relevance  
+3. Suitable job roles are suggested  
+4. Skill gaps are identified  
+5. A personalized 30-day roadmap is generated  
+
+---
+
+## 🚀 Future Scope (Not Part of This MVP)
+
+- Exam preparation modules  
+- Real-time mentor feedback  
+- Skill validation through projects  
+- Community learning rooms  
+- Job application alignment  
+
+---
+
+## 📌 Important Note
+
+This project is a **prototype MVP built for hackathon evaluation** and represents **Phase-1 of the Valsia platform roadmap**.
+
+---
+
+## 👥 Team
+
+Built by a student VALSIA startup team focused on bridging the gap between  
+learning, skills, and employability.
+
+ADITHYAN J 
+ISHACK S
+TAARUNYA GIRIRAJ
+PRANDYA SUNDAR
+
+
+---
+
+## 📄 License
+
+Shared strictly for demonstration and evaluation purposes.
